@@ -13,7 +13,7 @@ from colorama import Fore, Style
 
 def new_entry(index):
 
-	print(Fore.Blue + Style.BRIGHT + "How does this headline impact the public sentiment of Bitcoin?" + Style.RESET_ALL)
+	print(Fore.BLUE + Style.BRIGHT + "How does this headline impact the public sentiment of Bitcoin?" + Style.RESET_ALL)
 	print(Fore.GREEN + Style.BRIGHT + "LINE:" + str(index) + Style.RESET_ALL)
 	print(Fore.YELLOW + Style.BRIGHT + headlines["Headline"][index] + Style.RESET_ALL)
 
@@ -34,7 +34,7 @@ def new_entry(index):
 
 
 
-path = "../../data/scored_filtered_coindesk_headlines.csv"
+path = "../../data/scored_coindesk_headlines.csv"
 
 headlines = pd.read_csv(path, sep=",")
 
